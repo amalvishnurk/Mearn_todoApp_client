@@ -32,7 +32,7 @@ function App() {
         <h1>To do App</h1>
         <div className='top'>
           <input value={text} onChange={(e) => setText(e.target.value)} type='text' placeholder='Add to do here'></input>
-          <button
+          <button type='submit'
             onClick={() => isUpdating ? handleUpdate(text, id, setTodo, setText, setisUpdate)
               : handleAdd(text, setTodo, setText)}
             className='btn btn-dark '>{isUpdating ? 'Update' : 'Add'}
